@@ -36,14 +36,13 @@ public class DrawPentagram extends Draw{
 
     private void reviewReplays(int repeat,char character){
         for (int i = 1; i <= repeat ; i++) {
-            incertedCharacter(character);
+            insertedCharacter(character);
         }
     }
 
-    private void incertedCharacter( char character){
+    private void insertedCharacter( char character){
         switch (character){
             case 'G': super.addElement(0,positionY,'*');
-
                 positionY++;
                 break;
             case 'F': super.addElement(1,positionY,'*');
